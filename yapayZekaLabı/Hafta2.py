@@ -20,10 +20,11 @@ def uzayliOyunu():
 def switch(deger):
         if deger=="2":
             print("Tebrikler, yeşil uzaylıya ateş ettiğiniz için 5 puan kazandınız")
-        if deger!="1" or deger!="2" or deger!="3":
-            print("Tekrar Deneyiniz")
-        else:
+        elif  deger!="2" and (deger=="3" or deger=="1"):
             print("Tebrikler, yeşil olmayan uzaylıya ateş ettiğiniz için 10 puan kazandınız")
+        else:
+            print("Tekrar Deneyiniz")
+            
 
 def uzayliOyunu():
     uzaylıRengi=""
@@ -76,7 +77,7 @@ def meyveler():
                 
 # meyveler()
 # yasFonk()
-# uzayliOyunu()
+uzayliOyunu()
 # uzayliOyunu2()
 # ücgenAçi()
         
